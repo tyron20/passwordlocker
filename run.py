@@ -40,9 +40,9 @@ def display_credentials():
     '''returning method for creentials'''
     return Credentials.display_credentials()
 
-# def find_credentials():
-#     '''finding method for credentials'''   
-#     return Credentials.f
+def find_credential():
+    '''finding method for credentials'''   
+    return Credentials.find_credentials()
 
 def main():
 
@@ -101,7 +101,21 @@ def main():
                     print('\n')
             else:
                 print('\n')
-                print("You dont seem to have any contacts saved yet")
+                print("You dont seem to have any credentials saved yet")
                 print('\n')
+        elif short_code == 'fc':
+
+            print("Enter the account name you want to search for")
+
+            search_credentials = input()
+            if existing_credentials(search_credentials):
+                search_credentials = find_credential(search_credentials)
+                print(f"{search_credentials.app_name} {search_credentials.user_name}")
+                print('-' * 20)
+
+                print(f"Phone number.......{search_credentials.password}")
+            else:
+                print("That Account does not exist")
+
 if __name__ == '__main__':
     main()
