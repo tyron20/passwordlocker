@@ -32,6 +32,11 @@ def save_credentials(credentials):
     '''saving credentials'''
     Credentials.save_credentials()    
 
- def delete_credentials(credentials):
+def delete_credentials(credentials):
     '''deleting credentials'''
     Credentials.delete_credentials()      
+
+def display_credentials(cls):
+    '''returning method for creentials'''
+    return Credentials.delete_credentials()
+        
