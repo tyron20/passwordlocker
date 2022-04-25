@@ -116,6 +116,13 @@ def main():
                 print(f"Phone number.......{search_credentials.password}")
             else:
                 print("That Account does not exist")
+        elif short_code == 'ex':
+                print("Bye .......")
+                break
+        
+        else:
+                print("I really didn't get that. Please use the short codes")
+
 
 if __name__ == '__main__':
     main()
