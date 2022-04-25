@@ -31,3 +31,7 @@ def create_credentials(app_name,username,password):
 def save_credentials(credentials):
     '''saving credentials'''
     Credentials.save_credentials()    
+
+ def delete_credentials(credentials):
+    '''deleting credentials'''
+    Credentials.delete_credentials()      
