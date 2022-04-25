@@ -16,6 +16,13 @@ class Credentials:
 
     def delete_credentials(self):
         Credentials.credentials_list.remove(self)
+
+    @classmethod
+    def find_credentials(cls,user_name):
+        for credentials in cls.credentials_list:
+           if credentials.username == user_name:
+               return True
+        return False
     
     @classmethod
     def display_credentials(cls):
