@@ -27,3 +27,7 @@ def create_credentials(app_name,username,password):
     '''creating new credentials function'''
     new_credentials = Credentials(app_name,username,password)
     return new_credentials
+
+def save_credentials(credentials):
+    '''saving credentials'''
+    Credentials.save_credentials()    
