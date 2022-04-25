@@ -44,6 +44,10 @@ def find_credential():
     '''finding method for credentials'''   
     return Credentials.find_credentials()
 
+def existing_credentials():
+    '''fiding method for credentials'''
+    return Credentials.credentials_exist()
+
 def main():
 
     print("Hello Welcome to your passwordlocker. What is your name?")

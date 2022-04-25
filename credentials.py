@@ -27,8 +27,8 @@ class Credentials:
     def credentials_exist(cls,app_name):
         '''method to check if account exists'''
         for credentials in cls.credentials_list:
-            if credentials.app_name == app_name 
-            return True
+            if credentials.app_name == app_name:
+               return True
     @classmethod
     def display_credentials(cls):
         return cls.credentials_list
