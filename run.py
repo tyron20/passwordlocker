@@ -40,8 +40,32 @@ def display_credentials(cls):
     '''returning method for creentials'''
     return Credentials.delete_credentials()
 
-# def find_credentials(credentials):
-#     '''finding method for credentials'''   
-#     return Credentials.find_credentials()
+def find_credentials(credentials):
+    '''finding method for credentials'''   
+    return Credentials.find_credentials()
 
 def main():
+     print("Hello Welcome to your passwordlocker. What is your name?")
+     user_name = input()
+
+     print(f"Hello {user_name}. what would you like to Login(LOGIN)?")
+     print('\n')
+
+     while True:
+        
+        print("Use these short codes : cc - create a new account, dc - display credetials fc -find a credentials, ex -exit the credentials list ")
+
+if short_code == 'cc':
+            print("LOGIN")
+            print("-"*10)
+
+            print ("user name ....")
+            user_name = input()
+
+            print("password ...")
+            password = input()
+
+        save_contacts(create_user(user_name,password)) # create and save new ser.
+            print ('\n')
+            print(f"New User {user_name} {password} created")
+            print ('\n')
