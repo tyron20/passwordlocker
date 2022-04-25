@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.8
+from hashlib import new
 from credentials import Credentials
 from user import User
 import string
@@ -22,3 +23,7 @@ def display_user(cls):
     return User.display_user()          
 
 
+def create_credentials(app_name,username,password):
+    '''creating new credentials function'''
+    new_credentials = Credentials(app_name,username,password)
+    return new_credentials
